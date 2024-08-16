@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <title>Challenge</title>
+</head>
+
+<body>
+    <header>
+        <img class="header__img" src="./img/Logo.png" alt="logoPrincipal">
+    </header>
+    <main class="contenido__principal">
+        <section class="contenido__principal__primera">
+            <!--  <input class="" type="text" placeholder="Ingrese el texto aqui">  -->
+            <!-- CTRL K + U PARA COMENTARIAR -->
+            <textarea id="contenido__principal__texto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="contenido__principal__contenido">
+                <div class="contenido__principal__primera__texto">
+                    <img class="signo__exclamacion" src="./img/signo-de-exclamacion.png" alt="signoExclamacion">
+                    <p class="contenido__principal_texto">Solo letras minúsculas y sin acentos </p>
+                </div>
+                <div class="contenido__principal__botones">
+                    <button onclick="encriptar()"
+                        class="contenido__principal__primera__encriptar boton">Encriptar</button>
+                    <button onclick="desencriptar()"
+                        class="contenido__principal__primera__desencriptar boton">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="contenido__principal__segundo">
+            <img class="contenido__principal__segundo__img" src="./img/Muñeco.png" alt="">
+            <h2 class="contenido__principal__segundo_titulo">Ningun mensaje fue encontrado</h2>
+            <p class="contenido__principal__segundo_texto">Ingresa el texto que desees encriptar o Desencriptar</p>
+        </section>
+        <section class="contenido__principal__tercero">
+            <p class="contenido__principal__tercero__texto"></p>
+            <button onclick="botonCopiar()" class="contenido__principal__tercero__boton boton">Copiar</button>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
